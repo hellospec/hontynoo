@@ -99,5 +99,18 @@ module Hontynoo
         assert_equal [5, 7, 7, 0, 3, 4, 5, 8, 1, 1, 3], forecast.rasi_list_at_this_day
       end
     end
+
+    describe "#question" do
+      it "correct question case-1" do
+        possible_results =  %w[คุณกำลังคิดจะเดินทางไปไหน? เพื่อนของคุณกำลังมาหาหรือ? คุณคิดถึงเพื่อนของคุณอยู่หรือเปล่า? คุณกำลังคิดถึงเพื่อนสนิทของคุณ? คุณกำลังคิดว่าการเดินทางครั้งนี้จะเป็นอย่างไร?]
+        input_date = Time.new(2022,7,17,16,45,30, "+07:00")
+        forecast = Forecast.new(input_date)
+        assert possible_results.include? forecast.question
+
+        input_date = Time.new(2022,7,17,16,51,42, "+07:00")
+        forecast = Forecast.new(input_date)
+        assert possible_results.include? forecast.question
+      end
+    end
   end
 end
