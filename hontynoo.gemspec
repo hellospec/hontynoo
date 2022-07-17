@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
     "homepage_uri"    => spec.homepage,
     "source_code_uri" => spec.homepage
   }
+
+  spec.add_runtime_dependency "activesupport", "~> 7.0", ">= 7.0.3"
 end

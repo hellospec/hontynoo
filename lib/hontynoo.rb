@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
-require_relative "hontynoo/version"
+require "active_support"
+require "active_support/core_ext/date_and_time/calculations"
+require "active_support/core_ext/numeric/time"
+
+require "hontynoo/version"
+require "hontynoo/forecast"
 
 module Hontynoo
-  class Error < StandardError; end
-  # Your code goes here...
-
-  def self.hello
-    puts "hello hontynoo!"
-  end
 end

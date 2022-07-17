@@ -25,5 +25,15 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
+### Test
+Run all test cases
+```
+$ rake test
+```
+
+Run only specific test case. Below command will run only test cases in the file ./test/test_forecast.rb that contains string `xxx` (`-n` option is stand for "name").
+```
+$ ruby -Itest ./test/test_forecast.rb -n /xxx/
+```
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hontynoo.
