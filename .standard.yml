@@ -1,0 +1,7 @@
+# For available configuration options, see:
+#   https://github.com/testdouble/standard
+ruby_version: 3.0
+ignore:
+  - hontynoo.gemspec
+  - test/**/*
+  - bin/**/*
