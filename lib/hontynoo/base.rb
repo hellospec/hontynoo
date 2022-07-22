@@ -4,7 +4,7 @@ require "hontynoo/questionaire"
 require "hontynoo/explain"
 
 module Hontynoo
-  class Forecast
+  class Base
     include ::Hontynoo::Table
     include ::Hontynoo::Questionaire
     include ::Hontynoo::Explain
